@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exoplanet Detection Project</title>
+    <title>Exoplanet Mission Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>🌌 Exoplanet Detection Using NASA Kepler Data</h1>
+<div class="topbar">
+    🚀 NASA-STYLE EXOPLANET DETECTION DASHBOARD
+</div>
 
-<p>
-This project analyses real NASA telescope data to detect possible exoplanets using the transit method.
-</p>
+<div class="grid">
 
-<h2>🔭 What I Did</h2>
-<ul>
-    <li>Collected light curve data from NASA Kepler mission</li>
-    <li>Cleaned and processed time-series data using Python</li>
-    <li>Detected periodic brightness dips</li>
-    <li>Estimated possible exoplanet signals</li>
-</ul>
+    <div class="card">
+        <h2>📡 Mission Status</h2>
+        <p>Active Analysis: Kepler Light Curve Dataset</p>
+        <p>Status: Searching for Transit Signals...</p>
+    </div>
 
-<h2>📊 Results</h2>
+    <div class="card">
+        <h2>🪐 Candidate System</h2>
+        <p>Kepler-10</p>
+        <p>Detection Method: Transit Photometry</p>
+    </div>
 
-<h3>Light Curve</h3>
-<img src="images/lightcurve.png" width="600">
+    <div class="card">
+        <h2>⏱️ Orbital Analysis</h2>
+        <p>Period: (from Python output)</p>
+        <p>Confidence: Medium</p>
+    </div>
 
-<h3>Folded Light Curve</h3>
-<img src="images/folded_curve.png" width="600">
+    <div class="card">
+        <h2>📊 Light Curve</h2>
+        <img src="images/lightcurve.png">
+    </div>
 
-<h3>Periodogram</h3>
-<img src="images/periodogram.png" width="600">
+    <div class="card">
+        <h2>🌑 Folded Light Curve</h2>
+        <img src="images/folded_curve.png">
+    </div>
 
-<h2>🧠 Conclusion</h2>
-<p>
-The analysis suggests periodic signals consistent with potential exoplanet transits.
-Further verification is required to confirm planetary nature.
-</p>
+    <div class="card">
+        <h2>📈 Periodogram</h2>
+        <img src="images/periodogram.png">
+    </div>
 
-<h2>💻 Tools Used</h2>
-<ul>
-    <li>Python</li>
-    <li>Lightkurve</li>
-    <li>NASA Kepler Data</li>
-    <li>Matplotlib</li>
-</ul>
+    <div class="card wide">
+        <h2>🧠 Scientific Conclusion</h2>
+        <p>
+        Periodic brightness dips are consistent with potential exoplanet transit events.
+        Further verification is required using additional stellar datasets.
+        </p>
+    </div>
+
+</div>
 
 </body>
 </html>
